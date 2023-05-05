@@ -5,6 +5,7 @@ WORKDIR /clone-workspace
 RUN git clone https://github.com/jianjianai/NewBingGoGo-Web NewBingGoGo-Web
 
 WORKDIR /clone-workspace/NewBingGoGo-Web
+RUN git pull
 RUN gradle shadow
 
 WORKDIR /
